@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1440px;
+    height: 72px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    /* CORNFLOWER */
+
+    border-bottom: 1px solid #E7E9FC;
+}
+
+nav {
+    display: flex;
+    align-self: flex-start;
+}
+
+.link-list {
+    display: flex;
+
+}
+
+.link-list .li {
+    display: block;
+    margin-right: 111;
+
+
+}
