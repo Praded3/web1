@@ -156,7 +156,7 @@ footer {
     letter-spacing: 0.02em;
 }
 
-.button {
+.button-hero {
     color: var(--white-color);
     background-color: var(--accent-text-color);
     font-weight: 500;
@@ -164,7 +164,14 @@ footer {
     line-height: 1.5;
     align-items: center;
     letter-spacing: 0.04em;
+    font-family: Roboto, sans-serif;
 
+}
+
+.button-hero:hover,
+.button-hero:focus {
+    color: var(--accent-text-color);
+    background-color: var(--footer-text-color);
 }
 
 .section-our-team {
