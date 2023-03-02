@@ -20,6 +20,36 @@
 }
 
 /* ===========/font=========== */
+
+/* ===========noramalize=========== */
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+address {
+    font-style: normal;
+}
+
+* {
+    outline: 1px solid #434455;
+
+}
+
+
 .list {
     list-style: none;
 }
@@ -27,6 +57,8 @@
 .link {
     text-decoration: none;
 }
+
+/* ===========/noramalize=========== */
 
 /* ===========header=========== */
 .primery-logo {
@@ -97,6 +129,12 @@
     color: #ffffff;
     background-color: var(--accent-color);
     cursor: pointer;
+
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: #404BBF;
 }
 
 /* ===========/hero=========== */
@@ -179,6 +217,10 @@
     color: var(--accent-color);
     background-color: var(--primery-bgc);
     cursor: pointer;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    padding: 12px 24px;
+
 }
 
 .filtring-list-item:hover,
@@ -188,3 +230,12 @@
 }
 
 /* ===========portfolio=========== */
+
+.list-title {
+    display: flex;
+    max-width: 1440;
+}
+
+body {
+    max-width: 1440;
+}
