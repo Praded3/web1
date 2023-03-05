@@ -146,13 +146,19 @@ nav {
 
 .header {
     border-bottom: 1px solid #E7E9FC;
+
 }
 
 /* ===========/header=========== */
 
 /* ===========hero=========== */
 .section-hero {
-    background-color: var(--secondary-text-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(./images/bg-hero.png);
+    background-color: #2E2F42;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
 }
 
 .hero-title {
