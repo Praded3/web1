@@ -232,6 +232,16 @@ nav {
     border: 1px solid #E7E9FC;
 }
 
+
+
+.container-list-icon {
+    padding: 24px 100px;
+    margin-bottom: 8px;
+    background-color: var(--primery-bgc);
+    border-radius: 4px;
+}
+
+
 /* ===========/about-us=========== */
 
 /* ===========our-team=========== */
@@ -244,7 +254,30 @@ nav {
 
 }
 
+.team-member-sosial-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding-top: 8px;
+}
 
+.team-member-sosial-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+
+}
+
+.team-member-sosial-link-icon {
+
+    fill: var(--primery-bgc);
+
+}
 
 .team-member-name,
 .team-member-qualification {
@@ -353,8 +386,81 @@ nav {
     margin-top: 16px;
 }
 
+.decorative-container-footer {
+    margin-right: 120px;
+}
+
+.social-media-title {
+    font-family: var(--primery-font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: var(--primery-letter-spacing);
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.container-footer {
+    display: flex;
+}
+
+.footer-sosial-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-top: 16px;
+}
+
+.footer-sosial-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-sosial-link:hover,
+.footer-sosial-link:focus {
+    background: #31D0AA;
+}
+
+.footer-sosial-link-icon {
+    fill: var(--primery-bgc);
+}
 
 /* ===========/footer=========== */
+
+/* ===========Customers=========== */
+
+.cuctomers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+
+}
+
+.customers-list-item {
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    padding: 16px 30px;
+    fill: #8E8F99;
+
+}
+
+.customers-list-item:hover.customers-list-item,
+.customers-list-item:focus.customers-list-item {
+    fill: #404BBF;
+}
+
+.customers-list-item:hover {
+    border: 1px solid #404BBF;
+}
+
+/* ===========/Customers=========== */
 
 /* ===========portfolio=========== */
 .filtring-list-item {
@@ -401,12 +507,18 @@ nav {
     flex-wrap: wrap;
     column-gap: 20px;
     row-gap: 48px;
+
 }
 
 .element-list-item {
     background: #FFFFFF;
     border: 1px solid #E7E9FC;
     flex-basis: calc((100% - 40px) / 3);
+}
+
+.element-list-item:hover {
+    border: 1px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .element-list-item-text {
