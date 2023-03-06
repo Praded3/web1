@@ -98,6 +98,20 @@ address {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--secondary-text-color);
+    display: flex;
+    position: relative;
+}
+
+
+.active:after {
+    content: " ";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    bottom: -25px;
+    left: 0;
+    position: absolute;
 }
 
 .contacts-item-mail,
@@ -582,4 +596,101 @@ nav {
     transform: translate(0, 100%);
 }
 
-/* ===========portfolio=========== */
+.overley2 {
+    font-family: var(--primery-font-family);
+    font-weight: var(--primery-font-weight);
+    font-size: var(--primery-font-size);
+    line-height: 1.5;
+    letter-spacing: var(--primery-letter-spacing);
+    color: var(--primery-bgc);
+    padding: 40px 32px;
+    background-color: var(--accent-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transform: translate(100%, 0);
+}
+
+.element-list-item-link .overley2 {
+    transition: transform 250ms linear;
+}
+
+.element-list-item-link:hover .overley2,
+.element-list-item-link:focus .overley2 {
+    transform: translate(0%, 0%);
+}
+
+/* ===========/portfolio=========== */
+
+/* ===========backdrap=========== */
+.backdrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    z-index: 100;
+    transition: visibility 250ms linear, opacity 250ms linear;
+}
+
+
+
+.modal {
+    position: absolute;
+    width: 408px;
+    height: 222px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.icon-close {
+    width: 24px;
+    height: 24px;
+    background: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 24px;
+    margin-right: 24px;
+    transition: background-color 250ms linear;
+}
+
+.icon-close-svg {
+    fill: #000000;
+    width: 8px;
+    height: 8px;
+    transition: fill 250ms linear;
+
+}
+
+.icon-close:hover,
+.icon-close:focus {
+    border-radius: 4px;
+    background-color: #404BBF;
+    border-radius: 50%;
+}
+
+.icon-close:hover .icon-close-svg,
+.icon-close:focus .icon-close-svg {
+    fill: #FFFFFF;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* ===========/backdrap=========== */
