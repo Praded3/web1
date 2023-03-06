@@ -186,6 +186,7 @@ nav {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 1px solid transparent;
+    transition: background-color 250ms linear;
 
 }
 
@@ -220,6 +221,11 @@ nav {
 
 .about-us-list-item {
     flex-basis: calc((100% - 72px) / 4)
+}
+
+.bout-us-list-icon {
+    width: 64px;
+    height: 64px;
 }
 
 .section-title-exception {
@@ -426,15 +432,18 @@ nav {
     height: 40px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms linear;
 }
 
 .footer-sosial-link:hover,
 .footer-sosial-link:focus {
-    background: #31D0AA;
+    background-color: #31D0AA;
 }
 
 .footer-sosial-link-icon {
     fill: var(--primery-bgc);
+    width: 24px;
+    height: 24px;
 }
 
 /* ===========/footer=========== */
@@ -454,6 +463,8 @@ nav {
     border-radius: 4px;
     padding: 16px 30px;
     fill: #8E8F99;
+    transition: fill 250ms linear;
+
 
 }
 
@@ -482,7 +493,7 @@ nav {
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     padding: 12px 24px;
-
+    transition: border 250ms linear, border-radius 250ms linear, box-shadow 250ms linear, color 250ms linear, background-color 250ms linear;
 
 }
 
@@ -520,6 +531,8 @@ nav {
     background: #FFFFFF;
     border: 1px solid #E7E9FC;
     flex-basis: calc((100% - 40px) / 3);
+    transition: border 250ms linear, box-shadow 250ms linear;
+    /* position: relative; */
 }
 
 .element-list-item:hover {
@@ -537,9 +550,36 @@ nav {
     padding-left: 8px;
 }
 
-/* * {
-    outline: 1px solid #434455;
+.element-list-item-link .overley {
+    transition: transform 250ms linear;
+}
 
-} */
+.element-list-item-link:hover .overley,
+.element-list-item-link:focus .overley {
+    transform: translate(0%, 0%);
+}
+
+.decorative-container-list-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.overley {
+    font-family: var(--primery-font-family);
+    font-weight: var(--primery-font-weight);
+    font-size: var(--primery-font-size);
+    line-height: 1.5;
+    letter-spacing: var(--primery-letter-spacing);
+    color: var(--primery-bgc);
+    padding: 40px 32px;
+    background-color: var(--accent-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transform: translate(0, 100%);
+}
 
 /* ===========portfolio=========== */
