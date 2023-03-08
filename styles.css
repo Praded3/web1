@@ -871,4 +871,9 @@ nav {
     transition: background-color 250ms linear;
 }
 
+.button-submit:hover,
+.button-submit:focus {
+    background-color: #404BBF;
+}
+
 /* ===========/modal-form=========== */
