@@ -941,6 +941,11 @@ nav {
     margin-left: 80px;
 }
 
+.subscribe-form-input:focus {
+
+    border: 1px solid var(--accent-color);
+}
+
 .subscribe-form-input::placeholder {
     font-family: var(--primery-font-family);
     font-weight: 400;
